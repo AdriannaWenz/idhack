@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+    <h1>I'm the Expert</h1>
+    {% for expert in experts %}
+      <p> {{expert.username}} </p>
+      <p> {{expert.country}} </p>
+      <p> {{expert.expertise}} </p>
+      {% endfor %}
+{% endblock %}
